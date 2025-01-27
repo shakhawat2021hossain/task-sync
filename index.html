@@ -12,10 +12,8 @@
         <h1>Task Manager</h1>
         <!-- Task Input Form -->
         <form id="taskForm">
-            <input type="text" id="taskTitle" placeholder="Task
-Title" required>
-            <textarea id="taskDescription" placeholder="Task
-Description"></textarea>
+            <input type="text" id="taskTitle" placeholder="Task Title" required>
+            <textarea id="taskDescription" placeholder="Task Description"></textarea>
             <select id="taskPriority">
                 <option value="low">Low Priority</option>
                 <option value="medium">Medium Priority</option>
@@ -24,7 +22,24 @@ Description"></textarea>
             <button type="submit">Add Task</button>
         </form>
         <!-- Task List Container -->
-        <div id="taskList"></div>
+        <div>
+            <select id="sort">
+                <option value="">Default</option>
+                <option value="asc">Ascending</option>
+                <option value="dsc">Descending</option>
+            </select>
+            <select id="filter">
+                <option value="">All</option>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            <div id="taskList">
+
+            </div>
+
+        </div>
+
     </div>
 
     <script src="taskManager.js"></script>

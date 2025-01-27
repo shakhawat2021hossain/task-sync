@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto;
     padding: 20px;
     line-height: 1.6;
@@ -66,5 +66,10 @@ body {
 
 .delete-btn {
     background-color: #f44336;
+    color: white;
+}
+
+.update-btn {
+    background-color: #3a1eda;
     color: white;
 }
